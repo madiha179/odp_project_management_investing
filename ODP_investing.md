@@ -129,7 +129,7 @@ The visual charts (Bar Charts) scaled perfectly based on the new figures.
 Crucially, the backend successfully fetched the newly generated ERPNext Budget (BUDGET-2026-00002-1) and linked it to the forecast.
 
 *Conclusion*: The integration between the Budget Revision, Forecast, and Dashboard is fully functional and consistent.
-### A. Strengths (نقاط القوة)
+### A. Strengths 
 *   **Centralized Calculation Logic (Single Source of Truth):** The `get_financial_position()` function is heavily utilized by both the `ODP Project Forecast` form and the `ODP Project Financial Summary` report. This prevents discrepancies between what the user sees in the form and what the report calculates.
 *   **Robust Concurrency Control:** The use of `for_update=True` in the `ODP Budget Revision` baseline fetching prevents Race Conditions. If two users try to apply a revision simultaneously, the system locks the database rows to ensure data integrity.
 *   **Strict Server-Side Validation:** The Dashboard API (`get_dashboard_data`) does not trust client-side filters. It re-verifies that the selected Forecast belongs to the selected Project, ensuring data security and preventing unauthorized access.
