@@ -42,7 +42,7 @@ It connects the strategic planning phase (ODP Project Budget) with the operation
     * `period_actual_expenses`: Posted expenses within the selected period.
     * `total_actual_expenses`: Cumulative expenses from FY start to period end.
     * `expected_balance`: Approved Budget - Cumulative Actual - Future Forecast.
-![alt text](image.png)
+![alt text](image.jpeg)
 ## 3. Financial Dashboard
 * **Purpose:** Provides a visual, high-level summary of the financial position for a specific Project and Forecast period.
 * **Backend (`odp_finance.py`):**
